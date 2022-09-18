@@ -1,0 +1,41 @@
+.emptylist {
+  margin-top: 2.6rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  opacity: 0.8;
+}
+ul {
+  margin-top: 2.6rem;
+  list-style: none;
+}
+li {
+  display: flex;
+  margin: 0 -3rem 4px;
+  padding: 1.1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.delete-btn {
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: #fff;
+}
+.todo-completed {
+  text-decoration: line-through;
+  color: #e0e0e0;
+}
+.edit-btn {
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: #fff;
+}

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import './App.css';
+import { TodoCard } from './components/TodoCard/TodoCard';
+import { Header } from './components/Header/Header';
+import TextInput from './components/TextInput/TextInput';
+import Login from './components/Login/Login';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Login />
+      <div className="container">
+        <Header />
+        <TodoCard />
+        <TextInput />
+      </div>
+    </>
   );
-}
+};
 
 export default App;
